@@ -6,148 +6,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Hoja de Vida Fabian Andres Ariza. Tecnólogo en formación, creativo y de gran capacidad de aprendizaje, cuento con los conocimientos necesarios para trabajar en varios lenguajes de desarrollo web y programación tales como HTML, CSS, JAVA y PYTHON además de manejo de datos en SQL.">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
     <title>Hoja de vida</title>
+    <link rel="stylesheet" href="../static/css/estilos.css">
 </head>
 
 <body>
-    <div class="container" style="background: #f5f5f5;">
-        <nav>
-            <div class="nav-wrapper" style="background: #90caf9;">
-                <a href="#" class="brand-logo" style="color: black; margin-left: 10px;" id="inicio">Fabian Andres
-                    Ariza</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#perfil" class="a">Perfil</a></li>
-                    <li><a href="#estudios" class="a">Formacion Academica</a></li>
-                    <li><a href="#laboral" class="a">Experiencia Laboral</a></li>
-                </ul>
+    <div class="container">
+        <div class="row text-aling-center justify-content-between titulo p-4">
+            <div class="col-sm-12 col-md-5 col-lg-5 col-xl-6">
+                <a href="#" class="link-dark text-decoration-none h3" id="inicio">Fabian Andres Ariza</a>
             </div>
-        </nav>
-        <div class="col s12 m7">
-            <h4 class="header" id="perfil">Perfil</h4>
-            <div class="card horizontal container-fluid">
-                <div class="card-image">
-                    <img src="../static/foto.jpg" class="img-responsive">
+            <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
+                <a href="#perfil" class="link-dark link">Perfil</a>
+                <a href="#estudios" class="link-dark link">Formacion Academica</a>
+                <a href="#laboral" class="link-dark link">Experiencia Laboral</a>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="../static/img/foto.jpg" style="width: 80%;">
                 </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <p>
-                            Tecnólogo en formación, creativo y de gran capacidad de aprendizaje, cuento con los
-                            conocimientos necesarios para trabajar en varios lenguajes de desarrollo web y programación
-                            tales como HTML, CSS, JAVA y PYTHON además de manejo de datos en SQL. Poseo gran capacidad
-                            de adaptabilidad, mi objetivo es aportar herramientas útiles que permitan el desarrollo
-                            integral del ser humano.
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://www.linkedin.com/in/fabian-ariza-ariza-25b6001a6/"
-                            style="color: #64b5f6;">Perfil en linkedin</a>
+                <div class="col-md-9">
+                    <div class="card-body pt-5">
+                        <h4 class="card-title" id="perfil"> <b>Perfil</b></h4>
+                        <p class="card-text"> Tecnólogo en formación, creativo y de gran capacidad de aprendizaje,
+                            cuento con los conocimientos necesarios para trabajar en varios lenguajes de desarrollo web
+                            y programación tales como HTML, CSS, JAVA y PYTHON además de manejo de datos en SQL. Poseo
+                            gran capacidad de adaptabilidad, mi objetivo es aportar herramientas útiles que permitan el
+                            desarrollo integral del ser humano.</p>
+                        <div class="card-action">
+                            <a href="https://www.linkedin.com/in/fabian-ariza-ariza-25b6001a6/" class="btnLink">Perfil
+                                en linkedin</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col s12 m7">
-            <h4 class="header">Datos Personales</h4>
-            <div class="card horizontal">
-                <div class="card-stacked">
-                    <div class="card-content">
+        <div class="card mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body pt-5">
+                        <h4 class="card-title" id="perfil"><b>Datos Personales</b></h4>
                         <p>
-                            Nombre(s)/Apellido(s) Fabian Andres Ariza <br>
-                            Direccion Vélez Santander Carrera 6a N7a-03 America India <br>
-                            Movil 3142276424 <br>
-                            Correo(s) electronico(s) <u>faariza23@misena.edu.co</u><br>
-                            Nacionalidad Colombiana <br>
-                            Ciudad de nacimiento Vélez Santander <br>
-                            Documento de indentidad Cédula de ciudadania No. 1098.171.632 de el Peñón Santander <br>
-                            Sexo Masculino
+                            Nombre(s)/Apellido(s): Fabian Andres Ariza <br>
+                            Direccion: Vélez Santander Carrera 6a N7a-03 America India <br>
+                            Movil: 3142276424 <br>
+                            Correo(s) electronico(s): <u>faariza23@misena.edu.co</u><br>
+                            Nacionalidad: Colombiana <br>
+                            Ciudad de nacimiento: Vélez Santander <br>
+                            Documento de indentidad: Cédula de ciudadania No. 1098.171.632 de el Peñón Santander<br>
+                            Sexo: Masculino
                         </p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Documentos</h5>
+                        <a href="../static/docs/Cedula.pdf" class="btnLink">Ver Cédula de Ciudadanía</a><br>
+                        <a href="../static/docs/Cedula.pdf" class="btnLink">Ver Licencia de Conducción</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="col s12 m7">
-            <h4 class="header" id="estudios">Estudios</h4>
-            <div class="card horizontal">
-                <div class="card-stacked">
-                    <div class="card-content">
+        <div class="card mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body pt-5">
+                        <h4 class="card-title" id="estudios"><b>Estudios</b></h4>
                         <p>
                             Secundaria Colegio integrado Antonio Ricaurte <br>
                             Tecnologo Servicio Nacional de Aprendizaje Sena
                         </p>
                     </div>
+                    <div class="card-footer">
+                        <h5>Soportes</h5>
+                        <a href="../static/docs/Diploma.pdf" class="btnLink">Ver Diploma</a><br>
+                        <a href="../static/docs/Acta de grado.pdf" class="btnLink">Ver Acta de Grado</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="col s12 m7">
-            <h4 class="header">Formacion Complementaria</h4>
-            <div class="card horizontal">
-                <div class="card-stacked">
-                    <div class="card-content">
+        <div class="card mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body pt-5">
+                        <h4 class="card-title" id="perfil"><b>Formacion Complementaria</b></h4>
                         <p>
-                            Fundamentos esenciales de la programacion <br>
-                            Pesamiento Computacional <br>
-                            Front End en la nube <br>
-                            Cloud computing <br>
+                            Fundamentos esenciales de la programacion <span><a class="btnLink m-3" href="../static/docs/CertFundamentos de la programacion.pdf">Ver Soporte</a></span><br>
+                            Desarrollo de Software Introduccion a Python Web<span><a class="btnLink m-3" href="../static/docs/python certificado.pdf"> Ver Soporte</a></span><br>
+                            Pesamiento Computacional <span><a class="btnLink m-3" href="../static/docs/CERT.PENSAMIENTO COMPUTACIONAL.pdf">Ver Soporte</a></span> <br>
+                            Front End en la nube <span><a class="btnLink m-3" href="../static/docs/CERT.FRONT END.pdf">Ver Soporte</a></span><br>
+                            Cloud computing <span><a class="btnLink m-3" href="../static/docs/CERT.CLOUD COMPUTING.pdf">Ver Soporte</a></span><br>
+                            Ciencia de datos <span><a class="btnLink m-3" href="../static/docs/CERT.CIENCIA DE DATOS.pdf"> Ver Soporte</a></span><br>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="col s12 m7">
-            <h4 class="header" id="laboral">Experiencia Laboral</h4>
-            <table style="background: white;">
-                <thead>
-                    <tr>
-                        <th>Cargo</th>
-                        <th>Entidad</th>
-                        <th>Fecha de Inicio</th>
-                        <th>Fecha de Fin</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Alvin</td>
-                        <td>Eclair</td>
-                        <td>$0.87</td>
-                        <td>$0.87</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="card mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body pt-5">
+                        <h4 class="card-title" id="laboral"><b>Experiencia Laboral</b></h4>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
         <footer class="page-footer" style="background: #90caf9; margin-top: 10px;">
             <div class="container">
                 <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="black-text">Desarrollador Web</h5>
+                    <div class="col-xl-6 p-4">
+                        <h5 class="black-text"><b> Desarrollador Web </b></h5>
                         <p class="black-text text-lighten-4">
                             Cr 6a No 7a-03 America India <br>
                             Telefono 3142276424
                         </p>
                     </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="black-text">Links</h5>
+                    <div class="col-xl-6 p-4">
+                        <h5 class="black-text"><b>Links</b></h5>
                         <ul>
-                            <li><a class="black-text text-lighten-3 a" href="#inicio">Inicio</a></li>
+                            <li><a class="btnLink" href="#inicio">Perfil</a></li>
+                            <li><a class="btnLink" href="#estudios">Formacion Academica</a></li>
+                            <li><a class="btnLink" href="#laboral">Experiencia Laboral</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-copyright" style="background: #64b5f6">
                 <div class="container" style="color: black;">
-                    © 2014 Copyright Text
-                    <a class="black-text text-lighten-4 right" href="#!">More Links</a>
+                    © Febrero 2021
                 </div>
             </div>
         </footer>
     </div>
-
 
 
 
