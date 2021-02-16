@@ -46,9 +46,9 @@
     .linkp{
         display: flex;
         text-align: center;
-        justify-content: column;
         width: 100%;
         font-size: 5px;
+        flex-direction: column;
     }
 }
 @media(max-width:575px){
@@ -59,7 +59,7 @@
     .linkp{
         display: flex;
         text-align: center;
-        justify-content: column;
+        flex-direction: column;
         width: 100%;
         font-size: 5px;
     }
